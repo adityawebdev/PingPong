@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ping Pong</title>
+    <style>
+      h1 {
+        margin-left: 37rem;
+
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-family: sans-serif;
+      }
+      canvas {
+        margin-left: 25rem;
+        cursor: none;
+      }
+      @media (max-width: 1050px) {
+        canvas {
+          margin-left: 10rem;
+        }
+        h1 {
+          margin-left: 10rem;
+        }
+      }
+      @media (max-width: 670px) {
+        canvas {
+          margin-left: 0rem;
+        }
+        h1 {
+          margin-left: 0rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ping - Pong</h1>
+    <canvas id="pong" width="600px" height="400px"></canvas>
+    <script src="game.js"></script>
+  </body>
+</html>
